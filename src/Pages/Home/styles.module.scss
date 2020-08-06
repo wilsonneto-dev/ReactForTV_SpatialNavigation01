@@ -1,0 +1,48 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+
+  height: 100vh;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  > div {
+    flex: 1;
+    overflow: hidden;
+    flex-grow: 1;
+  }
+
+  .details {
+    text-align: center;
+    flex-basis: auto;
+  }
+
+  .sections {
+    flex-basis: auto;
+  }
+}
+
+.list {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+
+  .item {
+    display: inline-block;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+}
+
+:focus {
+  outline: 10px solid orange !important;
+
+  .item {
+    border: 2px solid orange;
+  }
+}
